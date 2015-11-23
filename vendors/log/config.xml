@@ -1,0 +1,21 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+ 
+    <appender name="myConsoleAppender" class="LoggerAppenderConsole" />
+    
+    <appender name="myFileAppender" class="LoggerAppenderFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%d{Y-m-d H:i:s.u} %-5p [%t] %c [%pid] From:%server{REMOTE_ADDR}:%server{REMOTE_PORT} Request:[%request] Session:[%session] ndc:[%ndc] Message: %m %C.%M(%F:%L) %n" />
+        </layout>
+        <param name="file" value="target/examples/file.log" />
+    </appender>
+ 
+    <logger name="Foo">
+        <appender_ref ref="myConsoleAppender" />
+        <param name="file" value="target/examples/file1.log" />
+    </logger>
+    
+    <root>
+        <level value="DEBUG" />
+        <appender_ref ref="myFileAppender" />
+    </root>
+</configuration>
