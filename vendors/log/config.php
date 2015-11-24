@@ -26,7 +26,7 @@ return array(
             //日志
             'log' => array(
             		'level' => 'TRACE',
-            		'appenders' => array('sfkcLog'),
+            		'appenders' => array('Log'),
             ),
      
             //推送消息日志
@@ -35,31 +35,31 @@ return array(
 //                     'appenders' => array('wxApiLog'),
 //             ),
 
-//         ),
-//         'appenders' => array(
-//             'default' => array(
-//                 'class' => 'CustomAppenderFile',
-//                 'layout' => array(
-//                     'class' => 'LoggerLayoutPattern',
-//                     'conversionPattern' => "%d{Y-m-d H:i:s} %-5p %c %X{username}: %m in %C.%M(%F:%L) %n",
-//                 ),
-//                 'params' => array(
-// 		                'file' => HOST_ROOT.'/../log/'.date("Ymd",time()).'/'.date("Y_m_d",time()).'.error.log',
-//                 ),
-//             ),
+         ),
+        'appenders' => array(
+            'default' => array(
+                'class' => 'CustomAppenderFile',
+                'layout' => array(
+                    'class' => 'LoggerLayoutPattern',
+                    'conversionPattern' => "%d{Y-m-d H:i:s} %-5p %c %X{username}: %m in %C.%M(%F:%L) %n",
+                ),
+                'params' => array(
+		                'file' => HOST_ROOT.'/../log/'.date("Ymd",time()).'/'.date("Y_m_d",time()).'.error.log',
+                ),
+            ),
            
-//             'sfkcLog' => array(
-//             		'class' => 'CustomAppenderFile',
-//             		'layout' => array(
-//             				'class' => 'LoggerLayoutPattern',
-//             				'params' => array(
-//             						'conversionPattern' =>"%d{Y-m-d H:i:s.u} pid[%pid] ip:%server{REMOTE_ADDR}:%server{REMOTE_PORT}   %-5p: %m (%C.%M:%L) %n",
-//             				),
-//             		),
-//             		'params' => array(
-//             				'file' => HOST_ROOT.'/../log/'.date("Ymd",time()).'/'.date("Y_m_d",time()).'.sfkcLog.log',
-//             		),
-//             ),
+            'Log' => array(
+            		'class' => 'CustomAppenderFile',
+            		'layout' => array(
+            				'class' => 'LoggerLayoutPattern',
+            				'params' => array(
+            						'conversionPattern' =>"%d{Y-m-d H:i:s.u} pid[%pid] ip:%server{REMOTE_ADDR}:%server{REMOTE_PORT}   %-5p: %m (%C.%M:%L) %n",
+            				),
+            		),
+            		'params' => array(
+            				'file' => HOST_ROOT.'/../log/'.date("Ymd",time()).'/'.date("Y_m_d",time()).'.Log.log',
+            		),
+            ),
          
 //             'wxApiLog' => array(
 //             		'class' => 'CustomAppenderFile',

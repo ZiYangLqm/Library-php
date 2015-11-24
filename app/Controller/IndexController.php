@@ -18,7 +18,11 @@ class IndexController extends AppController {
 	//TODO---------------------------------------web端代码区域-----------------------------------------
 	
 	function  index(){
-		$this->layout = "index_layout";
+		//$this->layout = "index_layout";
+		$this->set("host",HOST_ROOT);
+		echo HOST_ROOT;
+		var_dump(EMAIL_TO);
+		echo constant("EMAIL_TO");
 	}
 	
 // 	function  carInfo(){
@@ -54,9 +58,9 @@ class IndexController extends AppController {
 // 	}
 	
 	//TODO---------------------------------------辅助函数趋区域-----------------------------------------
-	function log(){
-		App::import ( 'Vendor', 'log/LogFactory' );
-		$log = LogFactory::getLogger ( "log" );
-		return $sfkclog;
-	}
+// 	function log(){
+// 		App::import ( 'Vendor', 'log/LogFactory' );
+// 		$log = LogFactory::getLogger ( "log" );
+// 		return $log;
+// 	}
 }
