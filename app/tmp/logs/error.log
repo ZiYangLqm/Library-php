@@ -1,0 +1,22 @@
+2015-11-23 10:25:52 Error: [MissingControllerException] Controller class ManagerController could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerController',
+  'plugin' => NULL,
+)
+Request URL: /manager/orderList
+Stack Trace:
+#0 /Users/shmn/Desktop/libraryManager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-24 10:13:34 Error: [MissingLayoutException] Layout file "Layouts/index_layout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layouts/index_layout.ctp',
+)
+Request URL: /index
+Stack Trace:
+#0 /Users/shmn/Desktop/Library-php/lib/Cake/View/View.php(514): View->_getLayoutFileName('index_layout')
+#1 /Users/shmn/Desktop/Library-php/lib/Cake/View/View.php(481): View->renderLayout('', 'index_layout')
+#2 /Users/shmn/Desktop/Library-php/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#3 /Users/shmn/Desktop/Library-php/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /Users/shmn/Desktop/Library-php/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndexController), Object(CakeRequest))
+#5 /Users/shmn/Desktop/Library-php/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
