@@ -73,8 +73,9 @@ class DATABASE_CONFIG {
 		'login' => 'root',
 		'password' => 'lqm1199',
 		'database' => 'library',
+		//'tablepre' => 'lib_',
 		'prefix' => '',
-		//'encoding' => 'utf8',
+		'encoding' => 'utf8',
 	);
 
 	public $test = array(

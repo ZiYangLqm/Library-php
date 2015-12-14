@@ -1,0 +1,172 @@
+body {
+	margin: 0px;
+	padding: 0;
+	background: #ADADAD url(img01.jpg) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #464646;
+}
+
+div.Top_line{
+     width: 980px;
+	 height: 140px;
+	 margin: 0 auto;
+	 padding: 0px;
+	 background: url(henglan.jpg) no-repeat left top;
+}
+div.Top_left{
+	float: left;
+	width: 490px;
+	height: 140px;
+}
+div.Top_right{
+	font-family: "Monotype Corsiva", Arial;
+	font-size: 15px;
+	position: fixed;
+    top: 5px; 
+    right: 120px; 
+    color: blue;
+}
+div.Top_right_left{
+	font-family: "Monotype Corsiva", Arial;
+	font-size: 15px;
+	position: fixed;
+    top: 1px; 
+    right: 180px; 
+    color: black;
+}
+
+
+
+
+h1.Text_logo{
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 50px;
+	color:#D8BFD8;
+ 	text-shadow: 0.1em 2px 4px #81C0C0;
+}
+
+p{
+	margin-top: 0;
+	line-height: 240%;
+	text-align: justify;
+}
+
+#menu 
+{
+	width: 980px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0px;
+}
+#sort
+{
+	float: left;
+	width: 600px;
+	height: 50px;
+}
+#sort ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	line-height: normal;
+}
+#sort li {
+	display: block;
+	float: left;
+	background: url(img_menu_inter.jpg) no-repeat left top;
+}
+#sort a {
+	display: block;
+	float: left;
+	height: 30px;
+	padding: 12px 20px 0px 20px;
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: lowercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #515F6B;
+}
+#menu a:hover /*选择鼠标指针浮动在其上的元素，并设置其样式*/
+{ 
+	text-decoration: none; 
+	/*outline: outset 3px #BEBEBE; 
+	outline-offset: 3px;*/
+	background-color: #BEBEBE;
+    color: red;
+}
+#search {
+	float: right;
+	width: 240px;
+	padding: 10px 10px 0px 0px;
+}
+#search form {
+	float: right;
+	margin: 0;
+	padding: 4px 0px 0 0;
+}
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#key {
+	width: 150px;
+	height: 18px;
+	padding: 3px 0 0 5px;
+	border: none;
+	background: #BEBEBE;
+	color: #FFFFFF;
+}
+
+#search-submit {
+	height: 21px;
+	margin-left: 10px;
+	padding: 0px 5px;
+	background: #BEBEBE;
+	border: none;
+	color: #FFFFFF;
+}
+div.main_list_f
+{
+	width: 980px;
+	margin: 0 auto;
+	padding: 0px;
+}
+div.main_list
+{
+	float: left;
+	width: 176px;
+	height: 272px;
+	margin: 4px;
+	padding: 5px;
+	border: 1px solid #F1E1FF;
+}
+div.img
+{
+	margin: 0 auto;
+	padding: 0px;
+}
+
+div.main_list ul
+{
+	margin: 0 auto;
+	padding: 0px;
+}
+
+li.menu_person
+{
+	display: block;
+	width: 60px;
+	color:#AAAAAA;
+}
+ul.submenu li a
+{
+	color:#AAAAAA;
+}
